@@ -117,7 +117,7 @@ function setupCompiler(host, port, protocol) {
         console.log();
       });
       // Teach some TSLint tricks.
-      console.log('You may use special comments to disable some warnings.');      
+      console.log('You may use special comments to disable some warnings.');
       console.log('Use ' + chalk.yellow('tslint:disable-line') + ' to disable this line.');
       console.log('Use ' + chalk.yellow('tslint:disable-next-line') + ' to ignore the rules on next line.');
       console.log('Use ' + chalk.yellow('tslint:disable ') + ' to disable linting for rest of file.');

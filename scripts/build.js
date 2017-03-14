@@ -128,12 +128,12 @@ function printErrors(summary, errors) {
         const fileContent = highlight(fs.readFileSync(err.file, 'utf8'), { language: 'typescript' })
           .split('\n');
         const before = fileContent.slice(line - 4, line)
-          .reduce((lines, code, i) => 
+          .reduce((lines, code, i) =>
               lines.concat(`${padLeft(longestLineNumber, (line - 4) + (i + 1))} | ${code}`)
               , [])
         const pointer = Array.from({ length: character + 4 }).map(() => '-').concat('^');
         const after = fileContent.slice(line, line + 4)
-          .reduce((lines, code, i) => 
+          .reduce((lines, code, i) =>
               lines.concat(`${padLeft(longestLineNumber, (line) + (i + 1))} | ${code}`)
               , [])
 

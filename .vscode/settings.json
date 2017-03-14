@@ -12,6 +12,10 @@
      "**/build/**": true
    },
    "files.associations": {
-     "*.js": "javascriptreact"
-   }
- } 
+     "*.js": "javascriptreact",
+     "*.ts": "typescriptreact"
+   },
+   "files.eol": "\n",
+   "files.trimTrailingWhitespace": true,
+   "editor.tabSize": 2
+ }
